@@ -1,6 +1,10 @@
 ### Restaurant Finder
 ___
 
+### Video
+![](https://media.giphy.com/media/l0IyiP5CPiwR0Q7le/giphy.gif)
+
+___
 ###### Setup
 
 * Run your local server on port 3000. You can download server here :
@@ -24,5 +28,3 @@ This app have several features listed below:
 * Choose type of search by using 2 button on the map `Restaurant - Coffee`
 
 ------
-
-### Updating video.... 

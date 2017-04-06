@@ -278,11 +278,13 @@ extension MapVC: DistrictTableViewControllerProtocol{
       if placesResult.count > 0 {
         let place = placesResult[0]
         
-        let coordinate2D = CLLocationCoordinate2D(latitude: place.lat, longitude: place.long)
+        self.camera = GMSCameraPosition.camera(withTarget: place.coordinate2D, zoom: MapConstant.ZoomValue)
+        
+        self.getInToCurrentLocation()
         
         self.selectedType = type
         
-        self.updateMarkerPosition(currentLocation: coordinate2D)
+        self.updateMarkerPosition(currentLocation: place.coordinate2D)
         self.drawResultMarkers(places: placesResult, map: self.map)
         self.delegate?.placesResult(places: placesResult)
       }
