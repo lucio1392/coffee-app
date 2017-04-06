@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		102EE26E84B976344F32B4142BCF38A4 /* Pulley-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA224FA95EF5910793D0FD4DF658F055 /* Pulley-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DD45012F79E2AA483BC4B4F807DE371 /* Pods-RestaurantMap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6011445A8034E0081F5E593F41F7BB28 /* Pods-RestaurantMap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DE258118F184B0FBCCE5E271F2FBC53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		50F5C57B8FDD4F7485792E676BA2A5AB /* PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE16D17B5E38185FB6D9267B52CA818 /* PulleyViewController.swift */; };
+		6B6AFBC2D0DC3DE21AC7A0314B560D8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		83D935DB91F1FBE498583EB8D8CF603B /* Pods-RestaurantMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6EAC448481F00898B3769958D52B51 /* Pods-RestaurantMap-dummy.m */; };
+		D0BA07B2765CA29F4386CF3B6782EE95 /* Pulley-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3ECFC25BAE595BB7A1020448159ED2 /* Pulley-dummy.m */; };
+		D6DCAD8100B00EF7B741ABEDC75B6A61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		F6866F742D6F1BA511AFCEC531122DA9 /* PulleyPassthroughScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738FE485C185FCE52F07A0B0A949373E /* PulleyPassthroughScrollView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BABD4AF6EE7064D74A8CF4ADCE37B899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF53263BEA4E41B288512B4D4828C929;
+			remoteInfo = Pulley;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BE16D17B5E38185FB6D9267B52CA818 /* PulleyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyViewController.swift; path = PulleyLib/PulleyViewController.swift; sourceTree = "<group>"; };
+		3BC46515921EDAB5A56A196B472A8974 /* Pods-RestaurantMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RestaurantMap.debug.xcconfig"; sourceTree = "<group>"; };
+		4AF3041C477F4E13E5B370BD46FD2DDB /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		597ACAC9AB7F0207C3A05F8EFAAA34D6 /* Pulley.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pulley.xcconfig; sourceTree = "<group>"; };
+		6011445A8034E0081F5E593F41F7BB28 /* Pods-RestaurantMap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RestaurantMap-umbrella.h"; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		64528B9A0B9DFF360B39F986CFE6E514 /* Pulley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pulley.framework; path = Pulley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		738FE485C185FCE52F07A0B0A949373E /* PulleyPassthroughScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyPassthroughScrollView.swift; path = PulleyLib/PulleyPassthroughScrollView.swift; sourceTree = "<group>"; };
+		74F753EEE0CD6B555DD13DD96F2D209F /* Pulley.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Pulley.modulemap; sourceTree = "<group>"; };
+		7521866671BFB478E272B167FDCAE3BE /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		7C339876E2C79E4D3D6298D01F87F20D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		84D895FC4C123AAB7F26154B1AF4B0A2 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B6EAC448481F00898B3769958D52B51 /* Pods-RestaurantMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RestaurantMap-dummy.m"; sourceTree = "<group>"; };
+		9BFA2B940FF3BFDD2976611A1D512AE0 /* Pods-RestaurantMap-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RestaurantMap-acknowledgements.plist"; sourceTree = "<group>"; };
+		9C9151012ECD4AD04921E476E9D8903C /* Pods-RestaurantMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RestaurantMap.modulemap"; sourceTree = "<group>"; };
+		9D8840F8EDE8402E7D6417C6B95C23E9 /* Pods_RestaurantMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RestaurantMap.framework; path = "Pods-RestaurantMap.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B199FA6F04CA543D8979C78A5E7F441D /* Pods-RestaurantMap-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RestaurantMap-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CE3ECFC25BAE595BB7A1020448159ED2 /* Pulley-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pulley-dummy.m"; sourceTree = "<group>"; };
+		CF1BF17059A9A9AABDF21E882394C50F /* Pulley-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-prefix.pch"; sourceTree = "<group>"; };
+		CF9CFEB6EC1414ED9EB524550BADCE03 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		D99213BA90C3334EF1BDC47D8F79D43C /* Pods-RestaurantMap-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RestaurantMap-frameworks.sh"; sourceTree = "<group>"; };
+		E46ECB1D8F1851354BA10EB76E3B671A /* Pods-RestaurantMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RestaurantMap.release.xcconfig"; sourceTree = "<group>"; };
+		E5783CAE2558A2B06D9C99890524E2BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E66C597349617840825A0452D9CFFBB5 /* Pods-RestaurantMap-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RestaurantMap-resources.sh"; sourceTree = "<group>"; };
+		EA224FA95EF5910793D0FD4DF658F055 /* Pulley-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13344168A7C7A250DE145473592CAC63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE258118F184B0FBCCE5E271F2FBC53 /* Foundation.framework in Frameworks */,
+				6B6AFBC2D0DC3DE21AC7A0314B560D8F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A06A7E01C00966931B41E5F7F69D660 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6DCAD8100B00EF7B741ABEDC75B6A61 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		263D66C1E051F491B7EBDEDB488B25EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				786A35817954ADCD2EC1F3F9E41ECCAA /* GoogleMaps */,
+				9C69C5244E8E5C25C25CA326BC6B007F /* Pulley */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		30E25140EFD0EDD5F999ED43FA7C67FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7521866671BFB478E272B167FDCAE3BE /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59B318568F6CC8EBED727330E54570D8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5783CAE2558A2B06D9C99890524E2BC /* Info.plist */,
+				74F753EEE0CD6B555DD13DD96F2D209F /* Pulley.modulemap */,
+				597ACAC9AB7F0207C3A05F8EFAAA34D6 /* Pulley.xcconfig */,
+				CE3ECFC25BAE595BB7A1020448159ED2 /* Pulley-dummy.m */,
+				CF1BF17059A9A9AABDF21E882394C50F /* Pulley-prefix.pch */,
+				EA224FA95EF5910793D0FD4DF658F055 /* Pulley-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pulley";
+			sourceTree = "<group>";
+		};
+		5D53A08093C71D684510A4C1057A2A22 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D57891DBE1A4D1D14FF3BE140647A49B /* Pods-RestaurantMap */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6CFF4439C97EF30663F73B517C057598 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AF3041C477F4E13E5B370BD46FD2DDB /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		786A35817954ADCD2EC1F3F9E41ECCAA /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				FD028705A6D1A7F091B126A81221598F /* Base */,
+				8C9E22BFE254255574A65B538C2C3F02 /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				263D66C1E051F491B7EBDEDB488B25EF /* Pods */,
+				B6E6698FB1F51B2163A6A08390E43AF5 /* Products */,
+				5D53A08093C71D684510A4C1057A2A22 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8C9E22BFE254255574A65B538C2C3F02 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				920AD76575670594CA2640CB60B6D5DE /* Frameworks */,
+				30E25140EFD0EDD5F999ED43FA7C67FE /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		920AD76575670594CA2640CB60B6D5DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84D895FC4C123AAB7F26154B1AF4B0A2 /* GoogleMaps.framework */,
+				CF9CFEB6EC1414ED9EB524550BADCE03 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C69C5244E8E5C25C25CA326BC6B007F /* Pulley */ = {
+			isa = PBXGroup;
+			children = (
+				738FE485C185FCE52F07A0B0A949373E /* PulleyPassthroughScrollView.swift */,
+				1BE16D17B5E38185FB6D9267B52CA818 /* PulleyViewController.swift */,
+				59B318568F6CC8EBED727330E54570D8 /* Support Files */,
+			);
+			name = Pulley;
+			path = Pulley;
+			sourceTree = "<group>";
+		};
+		B6E6698FB1F51B2163A6A08390E43AF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D8840F8EDE8402E7D6417C6B95C23E9 /* Pods_RestaurantMap.framework */,
+				64528B9A0B9DFF360B39F986CFE6E514 /* Pulley.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D57891DBE1A4D1D14FF3BE140647A49B /* Pods-RestaurantMap */ = {
+			isa = PBXGroup;
+			children = (
+				7C339876E2C79E4D3D6298D01F87F20D /* Info.plist */,
+				9C9151012ECD4AD04921E476E9D8903C /* Pods-RestaurantMap.modulemap */,
+				B199FA6F04CA543D8979C78A5E7F441D /* Pods-RestaurantMap-acknowledgements.markdown */,
+				9BFA2B940FF3BFDD2976611A1D512AE0 /* Pods-RestaurantMap-acknowledgements.plist */,
+				9B6EAC448481F00898B3769958D52B51 /* Pods-RestaurantMap-dummy.m */,
+				D99213BA90C3334EF1BDC47D8F79D43C /* Pods-RestaurantMap-frameworks.sh */,
+				E66C597349617840825A0452D9CFFBB5 /* Pods-RestaurantMap-resources.sh */,
+				6011445A8034E0081F5E593F41F7BB28 /* Pods-RestaurantMap-umbrella.h */,
+				3BC46515921EDAB5A56A196B472A8974 /* Pods-RestaurantMap.debug.xcconfig */,
+				E46ECB1D8F1851354BA10EB76E3B671A /* Pods-RestaurantMap.release.xcconfig */,
+			);
+			name = "Pods-RestaurantMap";
+			path = "Target Support Files/Pods-RestaurantMap";
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FD028705A6D1A7F091B126A81221598F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6CFF4439C97EF30663F73B517C057598 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A648F9FB067D556505ABE3F6425294ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD45012F79E2AA483BC4B4F807DE371 /* Pods-RestaurantMap-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E5F716E8F7187D35198ACE08D39F23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102EE26E84B976344F32B4142BCF38A4 /* Pulley-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2851C88EFF3DD655B3ECD58DAD8C0297 /* Pods-RestaurantMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7399B13AFD6BD254EC8591B781A042BD /* Build configuration list for PBXNativeTarget "Pods-RestaurantMap" */;
+			buildPhases = (
+				C35E938A2C643B25D06F702A5DFFE56B /* Sources */,
+				4A06A7E01C00966931B41E5F7F69D660 /* Frameworks */,
+				A648F9FB067D556505ABE3F6425294ED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD2ECF6D7B091AD879A08352CF7508FC /* PBXTargetDependency */,
+			);
+			name = "Pods-RestaurantMap";
+			productName = "Pods-RestaurantMap";
+			productReference = 9D8840F8EDE8402E7D6417C6B95C23E9 /* Pods_RestaurantMap.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF53263BEA4E41B288512B4D4828C929 /* Pulley */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE7531CD0124F76CFAFA51C171D2C4E7 /* Build configuration list for PBXNativeTarget "Pulley" */;
+			buildPhases = (
+				D9B94D8470CFF71FF0BDE17C0D1221AF /* Sources */,
+				13344168A7C7A250DE145473592CAC63 /* Frameworks */,
+				D2E5F716E8F7187D35198ACE08D39F23 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pulley;
+			productName = Pulley;
+			productReference = 64528B9A0B9DFF360B39F986CFE6E514 /* Pulley.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B6E6698FB1F51B2163A6A08390E43AF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2851C88EFF3DD655B3ECD58DAD8C0297 /* Pods-RestaurantMap */,
+				DF53263BEA4E41B288512B4D4828C929 /* Pulley */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C35E938A2C643B25D06F702A5DFFE56B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D935DB91F1FBE498583EB8D8CF603B /* Pods-RestaurantMap-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9B94D8470CFF71FF0BDE17C0D1221AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BA07B2765CA29F4386CF3B6782EE95 /* Pulley-dummy.m in Sources */,
+				F6866F742D6F1BA511AFCEC531122DA9 /* PulleyPassthroughScrollView.swift in Sources */,
+				50F5C57B8FDD4F7485792E676BA2A5AB /* PulleyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD2ECF6D7B091AD879A08352CF7508FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pulley;
+			target = DF53263BEA4E41B288512B4D4828C929 /* Pulley */;
+			targetProxy = BABD4AF6EE7064D74A8CF4ADCE37B899 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15B853434F8BB6925BC893AFEC993605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 597ACAC9AB7F0207C3A05F8EFAAA34D6 /* Pulley.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pulley/Pulley-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pulley/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pulley/Pulley.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Pulley;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		230947A5DA67A4D59FE3B2A27ADF3FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 597ACAC9AB7F0207C3A05F8EFAAA34D6 /* Pulley.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pulley/Pulley-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pulley/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pulley/Pulley.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Pulley;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		286A55FE26BEF1FA55DF4DE142C0DD43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E46ECB1D8F1851354BA10EB76E3B671A /* Pods-RestaurantMap.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RestaurantMap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RestaurantMap/Pods-RestaurantMap.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RestaurantMap;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81CA5CEB350FC6A0810712F3216D1A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BC46515921EDAB5A56A196B472A8974 /* Pods-RestaurantMap.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RestaurantMap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RestaurantMap/Pods-RestaurantMap.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RestaurantMap;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7399B13AFD6BD254EC8591B781A042BD /* Build configuration list for PBXNativeTarget "Pods-RestaurantMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81CA5CEB350FC6A0810712F3216D1A0A /* Debug */,
+				286A55FE26BEF1FA55DF4DE142C0DD43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7531CD0124F76CFAFA51C171D2C4E7 /* Build configuration list for PBXNativeTarget "Pulley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B853434F8BB6925BC893AFEC993605 /* Debug */,
+				230947A5DA67A4D59FE3B2A27ADF3FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

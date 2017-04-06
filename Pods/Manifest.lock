@@ -1,0 +1,19 @@
+PODS:
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - Pulley (1.3.1)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - Pulley
+
+SPEC CHECKSUMS:
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  Pulley: 99a45ad8aba14dafb2c6f4f16cb9667eb41c0919
+
+PODFILE CHECKSUM: 12529324f8de02caffdf84436665ff8a3d92575b
+
+COCOAPODS: 1.1.1
