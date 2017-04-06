@@ -56,6 +56,13 @@ extension ListPlaceVC: UITableViewDelegate{
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 85.0
   }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let detailPlace = storyboard?.instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
+    detailPlace.place = places[indexPath.row]
+    
+    present(detailPlace, animated: true, completion: nil)
+  }
 }
 
 extension ListPlaceVC: PulleyDrawerViewControllerDelegate{
