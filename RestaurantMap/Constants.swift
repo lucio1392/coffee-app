@@ -17,17 +17,24 @@ struct MapConstant {
 }
 
 struct NetworkService {
-  static let BaseURL = "http://localhost:3000/find/"
+  static let BaseURL = "http://163.44.206.220:3000/find/"
 }
 
 struct FindType {
-  static let RestaurantType = "restaurant"
-  static let CoffeeType = "coffee"
+  static let RestaurantType = "Quán ăn"
+  static let CoffeeType = "Café/Dessert"
 }
 
 enum TypeSelected {
   case restaurant
   case coffee
+  
+  var describe: String{
+    switch self {
+    case .restaurant: return "Quán ăn"
+    case .coffee: return "Café/Dessert"
+    }
+  }
 }
 
 struct CellIdentifier {

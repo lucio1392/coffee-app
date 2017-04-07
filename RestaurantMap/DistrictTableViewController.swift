@@ -9,7 +9,7 @@
 import UIKit
 
 protocol DistrictTableViewControllerProtocol: class {
-  func findLocationWithDistrict(district: District, type: TypeSelected)
+  func findLocationWithDistrict(district: District, type: String)
 }
 
 class DistrictTableViewController: UIViewController {
@@ -29,7 +29,7 @@ class DistrictTableViewController: UIViewController {
   
   var data: [District] = [District]()
   
-  var selectedType = TypeSelected.restaurant
+  var selectedType = TypeSelected.restaurant.describe
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -37,6 +37,7 @@ class DistrictTableViewController: UIViewController {
     setupInterface()
     setupDatasource()
     tableView.delegate = self
+    tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
     restaurantTypeButton.layer.borderWidth = 2.5
     coffeeTypeButton.layer.borderWidth = 0
   }
@@ -47,13 +48,13 @@ class DistrictTableViewController: UIViewController {
   }
   
   @IBAction func restaurantButton(_ sender: Any) {
-    selectedType = TypeSelected.restaurant
+    selectedType = TypeSelected.restaurant.describe
     restaurantTypeButton.layer.borderWidth = 2.5
     coffeeTypeButton.layer.borderWidth = 0.0
   }
 
   @IBAction func coffeeButton(_ sender: Any) {
-    selectedType = TypeSelected.coffee
+    selectedType = TypeSelected.coffee.describe
     restaurantTypeButton.layer.borderWidth = 0.0
     coffeeTypeButton.layer.borderWidth = 2.5
   }

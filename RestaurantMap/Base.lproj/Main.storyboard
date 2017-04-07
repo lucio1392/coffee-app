@@ -349,7 +349,7 @@
             </objects>
             <point key="canvasLocation" x="1892" y="733.5832083958021"/>
         </scene>
-        <!--Districts-->
+        <!--District Table View Controller-->
         <scene sceneID="ZgP-9k-kU3">
             <objects>
                 <viewController id="ngF-hq-BS6" customClass="DistrictTableViewController" customModule="RestaurantMap" customModuleProvider="target" sceneMemberID="viewController">
@@ -364,45 +364,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jve-Gr-rLW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="N5F-gi-PoZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkG-U5-QFB" userLabel="Restaurant" customClass="CustomButton" customModule="RestaurantMap" customModuleProvider="target">
-                                            <rect key="frame" x="32" y="0.0" width="142" height="45"/>
-                                            <color key="backgroundColor" red="0.1375978447" green="0.20621548570000001" blue="0.64280615480000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
-                                            <state key="normal" title="    Restaurant" image="RestaurantButton">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="restaurantButton:" destination="ngF-hq-BS6" eventType="touchUpInside" id="yMf-QX-4U2"/>
-                                            </connections>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVF-ZM-8Bs" customClass="CustomButton" customModule="RestaurantMap" customModuleProvider="target">
-                                            <rect key="frame" x="201" y="0.0" width="142" height="45"/>
-                                            <color key="backgroundColor" red="0.1375978447" green="0.20621548570000001" blue="0.64280615480000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
-                                            <state key="normal" title="    Coffee" image="CoffeeButton">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="coffeeButton:" destination="ngF-hq-BS6" eventType="touchUpInside" id="YnX-CA-gyA"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstItem="wkG-U5-QFB" firstAttribute="height" secondItem="N5F-gi-PoZ" secondAttribute="height" id="2wu-Na-JS8"/>
-                                        <constraint firstItem="OVF-ZM-8Bs" firstAttribute="width" secondItem="wkG-U5-QFB" secondAttribute="width" id="4jc-yG-4R3"/>
-                                        <constraint firstItem="wkG-U5-QFB" firstAttribute="leading" secondItem="N5F-gi-PoZ" secondAttribute="leading" constant="32" id="AZ5-Ws-akV"/>
-                                        <constraint firstItem="OVF-ZM-8Bs" firstAttribute="leading" secondItem="wkG-U5-QFB" secondAttribute="trailing" constant="27" id="KHr-Cm-mNg"/>
-                                        <constraint firstItem="OVF-ZM-8Bs" firstAttribute="height" secondItem="wkG-U5-QFB" secondAttribute="height" id="RcN-g8-lBi"/>
-                                        <constraint firstItem="OVF-ZM-8Bs" firstAttribute="top" secondItem="N5F-gi-PoZ" secondAttribute="top" id="ZnQ-HG-wpF"/>
-                                        <constraint firstItem="wkG-U5-QFB" firstAttribute="top" secondItem="N5F-gi-PoZ" secondAttribute="top" id="iP3-j7-8eZ"/>
-                                        <constraint firstAttribute="trailing" secondItem="OVF-ZM-8Bs" secondAttribute="trailing" constant="32" id="iXS-U5-90J"/>
-                                    </constraints>
-                                </view>
                                 <connections>
                                     <outlet property="dataSource" destination="ngF-hq-BS6" id="TCF-Q8-lcp"/>
                                 </connections>
@@ -416,12 +377,47 @@
                             <constraint firstAttribute="trailing" secondItem="Jve-Gr-rLW" secondAttribute="trailing" id="oGJ-na-ED0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Districts" id="Fad-eF-X7q">
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="TKp-ef-lsB">
-                            <connections>
-                                <action selector="cancelDistrict:" destination="ngF-hq-BS6" id="0Jo-Tn-HMS"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" id="Fad-eF-X7q">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="N5F-gi-PoZ">
+                            <rect key="frame" x="8" y="-1" width="359" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkG-U5-QFB" userLabel="Restaurant" customClass="CustomButton" customModule="RestaurantMap" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="0.0" width="158" height="40"/>
+                                    <color key="backgroundColor" red="0.1375978447" green="0.20621548570000001" blue="0.64280615480000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                    <state key="normal" title="     Restaurant" image="RestaurantButton">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="restaurantButton:" destination="ngF-hq-BS6" eventType="touchUpInside" id="yMf-QX-4U2"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVF-ZM-8Bs" customClass="CustomButton" customModule="RestaurantMap" customModuleProvider="target">
+                                    <rect key="frame" x="193" y="0.0" width="158" height="40"/>
+                                    <color key="backgroundColor" red="0.1375978447" green="0.20621548570000001" blue="0.64280615480000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                    <state key="normal" title="     Coffee" image="CoffeeButton">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="coffeeButton:" destination="ngF-hq-BS6" eventType="touchUpInside" id="YnX-CA-gyA"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="wkG-U5-QFB" firstAttribute="height" secondItem="N5F-gi-PoZ" secondAttribute="height" constant="-5" id="2wu-Na-JS8"/>
+                                <constraint firstItem="OVF-ZM-8Bs" firstAttribute="width" secondItem="wkG-U5-QFB" secondAttribute="width" id="4jc-yG-4R3"/>
+                                <constraint firstItem="wkG-U5-QFB" firstAttribute="leading" secondItem="N5F-gi-PoZ" secondAttribute="leading" constant="8" id="AZ5-Ws-akV"/>
+                                <constraint firstItem="OVF-ZM-8Bs" firstAttribute="leading" secondItem="wkG-U5-QFB" secondAttribute="trailing" constant="27" id="KHr-Cm-mNg"/>
+                                <constraint firstItem="OVF-ZM-8Bs" firstAttribute="height" secondItem="wkG-U5-QFB" secondAttribute="height" id="RcN-g8-lBi"/>
+                                <constraint firstItem="OVF-ZM-8Bs" firstAttribute="top" secondItem="N5F-gi-PoZ" secondAttribute="top" id="ZnQ-HG-wpF"/>
+                                <constraint firstItem="wkG-U5-QFB" firstAttribute="top" secondItem="N5F-gi-PoZ" secondAttribute="top" id="iP3-j7-8eZ"/>
+                                <constraint firstAttribute="trailing" secondItem="OVF-ZM-8Bs" secondAttribute="trailing" constant="8" id="iXS-U5-90J"/>
+                            </constraints>
+                        </view>
                     </navigationItem>
                     <connections>
                         <outlet property="coffeeTypeButton" destination="OVF-ZM-8Bs" id="LxW-L5-uNr"/>

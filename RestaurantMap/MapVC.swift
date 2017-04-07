@@ -34,6 +34,8 @@ class MapVC: UIViewController, ManagerLocationProtocol {
     return destinationMarker
   }()
   
+  var sessionTask: URLSessionDataTask?
+  
   lazy var managerLocation: CLLocationManager = CLLocationManager()
   lazy var currentLocation: CLLocation = CLLocation()
   lazy var locationForFindLocation: CLLocation = CLLocation()
@@ -41,13 +43,13 @@ class MapVC: UIViewController, ManagerLocationProtocol {
   lazy var camera: GMSCameraPosition = GMSCameraPosition()
   var customMarkers = [GMSMarker]()
   var places = [Place]()
-  var selectedType = TypeSelected.restaurant
+  var selectedType = TypeSelected.restaurant.describe
   var isFindDistrict: Bool = false
 		
   //MARK: - Functions
   
   @IBAction func restaurantTypeAction(_ sender: UIButton) {
-    selectedType = TypeSelected.restaurant
+    selectedType = TypeSelected.restaurant.describe
     restaurantTypeButton.layer.borderWidth = 2.5
     coffeeTypeButton.layer.borderWidth = 0.0
     findNearLocation {
@@ -56,7 +58,7 @@ class MapVC: UIViewController, ManagerLocationProtocol {
   }
   
   @IBAction func coffeeTypeAction(_ sender: UIButton) {
-    selectedType = TypeSelected.coffee
+    selectedType = TypeSelected.coffee.describe
     restaurantTypeButton.layer.borderWidth = 0.0
     coffeeTypeButton.layer.borderWidth = 2.5
     findNearLocation {
@@ -110,8 +112,9 @@ class MapVC: UIViewController, ManagerLocationProtocol {
     var type: String!
     
     switch selectedType {
-    case .restaurant: type = FindType.RestaurantType
-    case .coffee: type = FindType.CoffeeType
+    case FindType.RestaurantType : type = FindType.RestaurantType
+    case FindType.CoffeeType : type = FindType.CoffeeType
+    default: print("no type")
     }
     
     let params: JSONObject = ["lat": locationForFindLocation.coordinate.latitude,
@@ -119,14 +122,21 @@ class MapVC: UIViewController, ManagerLocationProtocol {
                               "r": map.getRadius(),
                               "type": type]
     
-    Services.shared.requestPlace(params: params, from: .near) { (placesResult) in
+    if sessionTask?.state == .running {
+      print("Cancel Running Task")
+      sessionTask?.cancel()
+    }
+    
+    sessionTask = Services.shared.requestPlace(params: params, from: .near) { (placesResult) in
       self.loadingLabel.isHidden = true
       self.typeView.isHidden = false
-      print(placesResult)
+      print("Number of place: \(placesResult.count)")
       self.places = placesResult
       self.drawResultMarkers(places: placesResult, map: self.map)
       completionHandle()
     }
+    
+    sessionTask?.resume()
   }
 
 }
@@ -210,6 +220,8 @@ extension MapVC: GMSMapViewDelegate{
   func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
     let infoView = Bundle.main.loadNibNamed("InfoWindow", owner: self.view, options: nil)!.first as! InfoWindow
     
+    print(getIndexOfPlace(from: marker))
+    
     infoView.configuratePlace(place: places[getIndexOfPlace(from: marker)])
     
     return infoView
@@ -276,13 +288,21 @@ extension MapVC: GMSMapViewDelegate{
 }
 
 extension MapVC: DistrictTableViewControllerProtocol{
-  internal func findLocationWithDistrict(district: District, type: TypeSelected) {
+  internal func findLocationWithDistrict(district: District, type: String) {
     
     let params : JSONObject = ["district": district.name,
                   "type": type]
     
-    Services.shared.requestPlace(params: params, from: .district) { (placesResult) in
+    if sessionTask?.state == .running {
+      print("Cancel Running Task")
+      sessionTask?.cancel()
+    }
+    
+    sessionTask = Services.shared.requestPlace(params: params, from: .district) { (placesResult) in
       
+      print("Number of place in district:\(placesResult.count)")
+      
+      self.places = placesResult
       if placesResult.count > 0 {
         let place = placesResult[0]
         self.isFindDistrict = true
@@ -296,6 +316,8 @@ extension MapVC: DistrictTableViewControllerProtocol{
       }
       
     }
+    
+    sessionTask?.resume()
     
   }
 }

@@ -10,7 +10,7 @@ import Foundation
 
 
 public struct Place {
-  var id: Int
+  var id: String
   var name: String
   var address: String
   var octime: String
@@ -25,7 +25,7 @@ public struct Place {
   }
   
   init(json: JSONObject) {
-    self.id = json["id"] as! Int
+    self.id = json["id"] as! String
     self.name = json["name"] as! String
     self.address = json["address"] as! String
     self.octime = json["octime"] as! String

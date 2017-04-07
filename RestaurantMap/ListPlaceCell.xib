@@ -18,29 +18,42 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFS-TY-FTc" customClass="CustomImageView" customModule="RestaurantMap" customModuleProvider="target">
-                        <rect key="frame" x="20" y="12" width="60" height="60"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TFS-TY-FTc" customClass="CustomImageView" customModule="RestaurantMap" customModuleProvider="target">
+                        <rect key="frame" x="12" y="12" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="dre-jL-hep"/>
+                            <constraint firstAttribute="width" constant="60" id="jeU-kc-7xu"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6d-Qd-RDI">
-                        <rect key="frame" x="96" y="14" width="200" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6d-Qd-RDI">
+                        <rect key="frame" x="96" y="12" width="216" height="18"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFr-TV-wce">
-                        <rect key="frame" x="96" y="37" width="200" height="15"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFr-TV-wce">
+                        <rect key="frame" x="96" y="35" width="216" height="15"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCd-eJ-b1O">
-                        <rect key="frame" x="96" y="56" width="200" height="15"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCd-eJ-b1O">
+                        <rect key="frame" x="96" y="56" width="216" height="15"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="dFr-TV-wce" firstAttribute="trailing" secondItem="h6d-Qd-RDI" secondAttribute="trailing" id="5ig-vy-N9U"/>
+                    <constraint firstItem="dFr-TV-wce" firstAttribute="top" secondItem="h6d-Qd-RDI" secondAttribute="bottom" constant="5" id="7jH-vA-bCv"/>
+                    <constraint firstItem="h6d-Qd-RDI" firstAttribute="top" secondItem="TFS-TY-FTc" secondAttribute="top" id="EgD-EP-LCH"/>
+                    <constraint firstItem="xCd-eJ-b1O" firstAttribute="top" secondItem="dFr-TV-wce" secondAttribute="bottom" constant="6" id="FQV-jp-2T1"/>
+                    <constraint firstItem="TFS-TY-FTc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pbi-OJ-39X"/>
+                    <constraint firstItem="TFS-TY-FTc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="WdC-nH-bqp"/>
+                    <constraint firstItem="xCd-eJ-b1O" firstAttribute="leading" secondItem="h6d-Qd-RDI" secondAttribute="leading" id="Z3f-2R-IpR"/>
+                    <constraint firstItem="dFr-TV-wce" firstAttribute="leading" secondItem="h6d-Qd-RDI" secondAttribute="leading" id="aNl-ZL-zhQ"/>
+                    <constraint firstItem="xCd-eJ-b1O" firstAttribute="trailing" secondItem="h6d-Qd-RDI" secondAttribute="trailing" id="oLn-9Q-2tv"/>
+                    <constraint firstAttribute="trailing" secondItem="h6d-Qd-RDI" secondAttribute="trailing" constant="8" id="tof-EE-WNV"/>
+                    <constraint firstItem="h6d-Qd-RDI" firstAttribute="leading" secondItem="TFS-TY-FTc" secondAttribute="trailing" constant="24" id="vzQ-ja-hdC"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="addressLabel" destination="dFr-TV-wce" id="N90-Rn-Cc8"/>
