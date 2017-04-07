@@ -2,7 +2,7 @@
 ___
 
 ### Video
-![](https://media.giphy.com/media/l0IyiP5CPiwR0Q7le/giphy.gif)
+![](https://github.com/sunsunai/coffee-app/blob/master/Video.gif)
 
 ___
 ###### Setup
