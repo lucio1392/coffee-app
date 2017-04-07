@@ -73,8 +73,6 @@ enum Router {
         stringBody = stringBody.appending("&")
       }
       
-      print(stringBody)
-      
       let dataBody = stringBody.data(using: .utf8)
       request.httpBody = dataBody
     }

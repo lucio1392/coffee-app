@@ -22,6 +22,7 @@ class ListPlaceVC: UIViewController, DataControllableProtocol {
   
   var places = [Place]()
 
+  @IBOutlet weak var gribView: UIView!
   @IBOutlet weak var tableView: UITableView!
   
     override func viewDidLoad() {
@@ -30,6 +31,8 @@ class ListPlaceVC: UIViewController, DataControllableProtocol {
       appDelegate.mapVC.delegate = self
         // Do any additional setup after loading the view.
       setupInterface()
+      gribView.layer.cornerRadius = 5.0
+      tableView.contentInset = UIEdgeInsetsMake(0, 0, 20, 0)
     }
 }
 
@@ -76,5 +79,12 @@ extension ListPlaceVC: PulleyDrawerViewControllerDelegate{
 
   func collapsedDrawerHeight() -> CGFloat {
     return 20.0
+  }
+  
+  func drawerPositionDidChange(drawer: PulleyViewController) {
+    if drawer.drawerPosition == .open {
+      print("open pully")
+      tableView.isScrollEnabled = true
+    }
   }
 }

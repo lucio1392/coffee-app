@@ -9,9 +9,7 @@
 import Foundation
 
 struct APIKey {
-  
   static let GoogleMapAPIKey = "AIzaSyDRERmWZhFOXn_k7k9QXWgss36gJHu6gd8"
-  
 }
 
 struct MapConstant {

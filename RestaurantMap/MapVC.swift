@@ -42,6 +42,7 @@ class MapVC: UIViewController, ManagerLocationProtocol {
   var customMarkers = [GMSMarker]()
   var places = [Place]()
   var selectedType = TypeSelected.restaurant
+  var isFindDistrict: Bool = false
 		
   //MARK: - Functions
   
@@ -176,18 +177,27 @@ extension MapVC: GMSMapViewDelegate{
   }
   
   func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
-    updateMarkerPosition(currentLocation: position.target)
+    if !isFindDistrict {
+      updateMarkerPosition(currentLocation: position.target)
+    }
     self.radiusLabel.text = "Radius: \(mapView.getRadius()) m"
   }
   
   
   func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
     
-    locationForFindLocation = CLLocation(latitude: position.target.latitude, longitude: position.target.longitude)
-    
-    findNearLocation { 
-      self.delegate?.placesResult(places: self.places)
+    if !isFindDistrict {
+      locationForFindLocation = CLLocation(latitude: position.target.latitude, longitude: position.target.longitude)
+      
+      findNearLocation {
+        self.delegate?.placesResult(places: self.places)
+      }
+    }else{
+      self.loadingLabel.isHidden = true
+      self.typeView.isHidden = false
+      isFindDistrict = false
     }
+    
   }
   
   // MARK: - Marker Delegate
@@ -238,7 +248,7 @@ extension MapVC: GMSMapViewDelegate{
       
       customMarkers.append(marker)
     }
-    
+
   }
   
   func clearCurrentCustomerMarkers() {
@@ -273,17 +283,13 @@ extension MapVC: DistrictTableViewControllerProtocol{
     
     Services.shared.requestPlace(params: params, from: .district) { (placesResult) in
       
-      print(placesResult)
-      
       if placesResult.count > 0 {
         let place = placesResult[0]
-        
+        self.isFindDistrict = true
+        self.selectedType = type
         self.camera = GMSCameraPosition.camera(withTarget: place.coordinate2D, zoom: MapConstant.ZoomValue)
         
         self.getInToCurrentLocation()
-        
-        self.selectedType = type
-        
         self.updateMarkerPosition(currentLocation: place.coordinate2D)
         self.drawResultMarkers(places: placesResult, map: self.map)
         self.delegate?.placesResult(places: placesResult)
