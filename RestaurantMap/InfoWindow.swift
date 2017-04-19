@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class InfoWindow: UIView {
 
@@ -16,16 +17,11 @@ class InfoWindow: UIView {
   @IBOutlet weak var typeImageView: UIImageView!
 
   func configuratePlace(place: Place) {
-    typeImageView.layer.cornerRadius = typeImageView.bounds.width / 2.0
+    typeImageView.layer.cornerRadius = 8.0
+    typeImageView.clipsToBounds = true
     
-    switch place.type {
-    case FindType.RestaurantType:
-      typeImageView.image = #imageLiteral(resourceName: "RestaurantButton")
-    case FindType.CoffeeType:
-      typeImageView.image = #imageLiteral(resourceName: "CoffeeButton")
-    default:
-      print("No Type")
-    }
+    typeImageView.kf.indicatorType = .activity
+    typeImageView.kf.setImage(with: place.placeImageURL)
     
     openTimeLabel.text = place.octime
     nameLabel.text = place.name

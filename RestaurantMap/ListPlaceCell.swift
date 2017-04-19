@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ListPlaceCell: UITableViewCell {
   
@@ -24,13 +25,12 @@ class ListPlaceCell: UITableViewCell {
   }
   
   func configureCell(place: Place) {
-    switch place.type {
-    case FindType.RestaurantType: typeImageView.image = #imageLiteral(resourceName: "RestaurantDetail")
-    case FindType.CoffeeType: typeImageView.image = #imageLiteral(resourceName: "CoffeeDetail")
-    default:
-      print("Hi")
-    }
     
+    print(place.placeImageURL)
+    typeImageView.layer.cornerRadius = 5.0
+    typeImageView.clipsToBounds = true
+    typeImageView.kf.indicatorType = .activity
+    typeImageView.kf.setImage(with: place.placeImageURL)
     nameLabel.text = place.name
     addressLabel.text = place.address
     openTimeLabel.text = "Open Time: \(place.octime)"

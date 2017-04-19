@@ -9,7 +9,7 @@
 import UIKit
 
 protocol DistrictTableViewControllerProtocol: class {
-  func findLocationWithDistrict(district: District, type: String)
+  func findLocationWithDistrict(district: District, type: Int)
 }
 
 class DistrictTableViewController: UIViewController {

@@ -32,7 +32,7 @@ public extension DataControllableProtocol where Self: UIViewController{
   
   public func setupDatasource() {
     
-    data = [District(name: "Quận Hà Đông"),District(name: "Quận Hai Bà Trưng"),District(name: "Quận Hoàn Kiếm"),District(name: "Quận Ba Đình"),District(name: "Quận Thanh Xuân"),District(name: "Quận Đống Đa"),District(name: "Quận Cầu Giấy"),District(name: "Quận Tây Hồ"),District(name: "Quận Hoàng Mai"),District(name: "Quận Nam Từ Liêm"),District(name: "Quận Bắc Từ Liêm"),District(name: "Quận Long Biên"),District(name: "Gia Lâm")]
+    data = [District(name: "Quận Hà Đông", id: 1),District(name: "Quận Hai Bà Trưng", id: 2),District(name: "Quận Hoàn Kiếm", id: 3),District(name: "Quận Ba Đình", id: 4),District(name: "Quận Thanh Xuân", id: 5),District(name: "Quận Đống Đa", id: 6),District(name: "Quận Cầu Giấy", id: 7),District(name: "Quận Tây Hồ", id: 8),District(name: "Gia Lâm", id: 9),District(name: "Quận Hoàng Mai", id: 10),District(name: "Quận Nam Từ Liêm", id: 11),District(name: "Quận Bắc Từ Liêm", id: 12),District(name: "Quận Long Biên", id: 13)]
     dataViewable.reloadData()
   }
   

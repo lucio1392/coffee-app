@@ -109,7 +109,7 @@ class MapVC: UIViewController, ManagerLocationProtocol {
   }
   
   func findNearLocation(completionHandle: @escaping ()->()) {
-    var type: String!
+    var type: Int!
     
     switch selectedType {
     case FindType.RestaurantType : type = FindType.RestaurantType
@@ -117,10 +117,10 @@ class MapVC: UIViewController, ManagerLocationProtocol {
     default: print("no type")
     }
     
-    let params: JSONObject = ["lat": locationForFindLocation.coordinate.latitude,
-                              "long": locationForFindLocation.coordinate.longitude,
-                              "r": map.getRadius(),
-                              "type": type]
+    let params: JSONObject = ["inLat": locationForFindLocation.coordinate.latitude,
+                              "inLong": locationForFindLocation.coordinate.longitude,
+                              "inR": map.getRadius(),
+                              "inType": type]
     
     if sessionTask?.state == .running {
       print("Cancel Running Task")
@@ -288,10 +288,10 @@ extension MapVC: GMSMapViewDelegate{
 }
 
 extension MapVC: DistrictTableViewControllerProtocol{
-  internal func findLocationWithDistrict(district: District, type: String) {
+  internal func findLocationWithDistrict(district: District, type: Int) {
     
-    let params : JSONObject = ["district": district.name,
-                  "type": type]
+    let params : JSONObject = ["inDist": district.id,
+                  "inType2": type]
     
     if sessionTask?.state == .running {
       print("Cancel Running Task")

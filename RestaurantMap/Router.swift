@@ -43,8 +43,8 @@ enum Router {
       let relativePath: String?
       
       switch self{
-      case .searchNear: relativePath = "near"
-      case .searchDistrict: relativePath = "dist"
+      case .searchNear: relativePath = "location"
+      case .searchDistrict: relativePath = "district"
       }
       var url = URL(string: NetworkService.BaseURL)!
       if let relativePath = relativePath{

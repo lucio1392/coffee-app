@@ -6,6 +6,7 @@ target 'RestaurantMap' do
   use_frameworks!
   pod 'GoogleMaps'
   pod 'Pulley'
+  pod 'Kingfisher', '~> 3.0'
   # Pods for RestaurantMap
 
 end

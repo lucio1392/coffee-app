@@ -46,7 +46,7 @@ class DetailVC: UIViewController {
     openTimeLabel.text = "Open time: \(place.octime)"
     districtLabel.text = place.district
     rateLabel.text = "\(place.rate) / 10"
-    typeLabel.text = place.type.uppercased()
+//    typeLabel.text = place.type.uppercased()
   }
   
   @IBAction func doneAction(_ sender: Any) {

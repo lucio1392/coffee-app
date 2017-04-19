@@ -10,4 +10,5 @@ import Foundation
 
 public struct District {
   var name: String
+  var id: Int
 }

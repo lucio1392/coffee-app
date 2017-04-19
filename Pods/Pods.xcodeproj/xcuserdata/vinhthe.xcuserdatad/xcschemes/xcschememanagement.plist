@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-RestaurantMap.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2851C88EFF3DD655B3ECD58DAD8C0297</key>
+		<key>3DB47EDF20341144C4D7A6EB5DAD4A38</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DF53263BEA4E41B288512B4D4828C929</key>
+		<key>C4944FEC314D1A66588651D006273ADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3BF8ED5D1C9764DB032BE89CADB3A52</key>
 		<dict>
 			<key>primary</key>
 			<true/>

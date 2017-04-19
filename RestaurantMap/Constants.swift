@@ -21,18 +21,18 @@ struct NetworkService {
 }
 
 struct FindType {
-  static let RestaurantType = "Quán ăn"
-  static let CoffeeType = "Café/Dessert"
+  static let RestaurantType = 1
+  static let CoffeeType = 2
 }
 
 enum TypeSelected {
   case restaurant
   case coffee
   
-  var describe: String{
+  var describe: Int{
     switch self {
-    case .restaurant: return "Quán ăn"
-    case .coffee: return "Café/Dessert"
+    case .restaurant: return 1
+    case .coffee: return 2
     }
   }
 }
