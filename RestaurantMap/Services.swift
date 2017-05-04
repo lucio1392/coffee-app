@@ -45,15 +45,19 @@ class Services {
     
     return session.dataTask(with: urlRequest) { (data, response, error) in
       if let _ = error{
+        
+        print(error?.localizedDescription)
         completion(false, nil)
       }else{
         
         guard let data = data, let responseHTTP = response as? HTTPURLResponse, responseHTTP.statusCode == 200 else { return }
 
         do{
-          let jsons = try JSONSerialization.jsonObject(with: data, options: []) as? [JSONObject]
+          let jsons = try JSONSerialization.jsonObject(with: data, options: []) as! JSONObject
           
-          completion(true, jsons)
+          let jsonsArray: [JSONObject] = jsons["datas"] as! [JSONObject]
+          
+          completion(true, jsonsArray)
           
         }catch _ as NSError{
           completion(false, nil)
@@ -74,6 +78,7 @@ class Services {
     
     return request(urlRequest: urlRequest) { (success, jsonObjects) in
       if success{
+        
         var places = [Place]()
         
         for json in jsonObjects!{
